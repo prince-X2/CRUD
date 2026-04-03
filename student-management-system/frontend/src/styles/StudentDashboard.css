@@ -1,0 +1,171 @@
+/* Student Dashboard Page */
+.student-dashboard {
+  padding: 40px 20px;
+  flex: 1;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  color: #4a90e2;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.student-dashboard-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.students-list {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.students-list h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.student-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-list-items li {
+  margin-bottom: 8px;
+}
+
+.student-list-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #f9f9f9;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.student-list-btn:hover {
+  background-color: #f0f5ff;
+  border-color: #4a90e2;
+}
+
+.student-list-btn.active {
+  background-color: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+}
+
+.list-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.student-name {
+  font-weight: 600;
+}
+
+.student-id {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.students-details {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-selected {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.back-to-admin {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-to-admin:hover {
+  background-color: #357abd;
+}
+
+.no-students {
+  text-align: center;
+  padding: 20px 10px;
+  color: #999;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .student-dashboard-container {
+    grid-template-columns: 1fr;
+  }
+
+  .students-list {
+    max-height: none;
+  }
+
+  .students-list h3 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .student-dashboard {
+    padding: 20px 15px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .dashboard-header p {
+    font-size: 1rem;
+  }
+
+  .student-dashboard-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .students-list {
+    padding: 15px;
+  }
+
+  .students-details {
+    padding: 20px;
+  }
+}

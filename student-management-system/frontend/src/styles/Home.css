@@ -1,0 +1,151 @@
+/* Home Page Styling */
+.home {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.home-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.home-content {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-content p:first-of-type {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+
+.role-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 0;
+}
+
+.role-card {
+  padding: 25px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #4a90e2;
+  display: flex;
+  flex-direction: column;
+}
+
+.role-card h3 {
+  color: #4a90e2;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.role-card ul {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.role-card li {
+  padding: 8px 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+}
+
+.role-card li:last-child {
+  border-bottom: none;
+}
+
+.role-card li::before {
+  content: '✓ ';
+  color: #4a90e2;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.role-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.admin-btn:hover {
+  background-color: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.student-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.student-btn:hover {
+  background-color: #229954;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .home-content {
+    padding: 20px;
+  }
+
+  .role-description {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .role-card {
+    padding: 20px;
+  }
+}
