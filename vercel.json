@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "buildCommand": "cd student-management-system/frontend && npm run build",
+  "outputDirectory": "student-management-system/frontend/dist",
+  "framework": "vite"
+}
